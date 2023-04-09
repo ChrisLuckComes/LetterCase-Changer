@@ -44,7 +44,7 @@
       },
       {
         "command": "letter-case-changer.camelCaseToUnderLine",
-        "key": "ctrl+c ctrl+u",
+        "key": "ctrl+shift+u",
         "when": "editorHasSelection"
       }
     ]

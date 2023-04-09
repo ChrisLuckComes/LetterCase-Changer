@@ -84,7 +84,7 @@ export function activate(context: vscode.ExtensionContext) {
           editor.edit((editBuilder) => {
             editBuilder.replace(selection, toUnderLine(words!));
             vscode.window
-              .showInformationMessage("toLowerCase suceessfully!")
+              .showInformationMessage("camelCaseToUnderLine suceessfully!")
               .then(() => save(editor));
           });
         }
