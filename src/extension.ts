@@ -37,8 +37,7 @@ export function activate(context: vscode.ExtensionContext) {
     'Congratulations, your extension "letter-case-changer" is now active!'
   );
 
-  const editor = vscode.window.activeTextEditor,
-    selection = editor?.selection;
+  const editor = vscode.window.activeTextEditor;
 
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with registerCommand
@@ -47,12 +46,12 @@ export function activate(context: vscode.ExtensionContext) {
       // The code you place here will be executed every time your command is executed
       // Display a message box to the user
       // vscode.window.showInformationMessage('Hello World from Letter Case Changer!');
-
-      let words = getSelectionText(editor, selection);
+      let selection = editor?.selection,
+        words = getSelectionText(editor, selection);
 
       if (selection && words) {
         editor?.edit((editBuilder) => {
-          editBuilder.replace(selection, words!.toUpperCase());
+          editBuilder.replace(selection!, words!.toUpperCase());
           vscode.window
             .showInformationMessage("toUpperCase suceessfully!")
             .then(() => save(editor));
@@ -60,11 +59,12 @@ export function activate(context: vscode.ExtensionContext) {
       }
     }),
     toLowerCase = registerCommand("letter-case-changer.toLowerCase", () => {
-      let words = getSelectionText(editor, selection);
+      let selection = editor?.selection,
+        words = getSelectionText(editor, selection);
 
       if (selection && words) {
-        editor.edit((editBuilder) => {
-          editBuilder.replace(selection, words!.toLowerCase());
+        editor?.edit((editBuilder) => {
+          editBuilder.replace(selection!, words!.toLowerCase());
           vscode.window
             .showInformationMessage("toLowerCase suceessfully!")
             .then(() => save(editor));
@@ -74,11 +74,12 @@ export function activate(context: vscode.ExtensionContext) {
     camelCaseToUnderLine = registerCommand(
       "letter-case-changer.camelCaseToUnderLine",
       () => {
-        let words = getSelectionText(editor, selection);
+        let selection = editor?.selection,
+          words = getSelectionText(editor, selection);
 
         if (selection && words) {
-          editor.edit((editBuilder) => {
-            editBuilder.replace(selection, toUnderLine(words!));
+          editor?.edit((editBuilder) => {
+            editBuilder.replace(selection!, toUnderLine(words!));
             vscode.window
               .showInformationMessage("camelCaseToUnderLine suceessfully!")
               .then(() => save(editor));

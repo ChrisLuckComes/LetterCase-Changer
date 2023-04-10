@@ -4,7 +4,7 @@ For selection words,this extension offers some features.
 
 ## Features
 
-### 0.0.3
+### 0.0.4
 
 support following features:
 

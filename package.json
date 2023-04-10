@@ -2,7 +2,7 @@
   "name": "letter-case-changer",
   "displayName": "Letter Case Changer",
   "description": "a vscode extension to change selected words to uppercase or lowercase",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "ChrisLuo",
   "engines": {
     "vscode": "^1.77.0"

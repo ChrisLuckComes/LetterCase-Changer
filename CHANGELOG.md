@@ -11,3 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [v0.0.3]
 
 - remove unnecessary code.
+
+## [v0.0.4]
+
+- Avoid keeping selection in closure, get selection in function instead.

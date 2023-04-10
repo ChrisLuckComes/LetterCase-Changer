@@ -17,3 +17,5 @@ export function camelCaseToUnderLine(str: string) {
 export function underlineToCamelCase(str: string) {
   return str.replace(/[_][a-z]/g, (match) => match.toUpperCase());
 }
+
+console.log(camelCaseToUnderLine("lastTitle"));
