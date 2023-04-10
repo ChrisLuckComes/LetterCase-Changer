@@ -15,11 +15,7 @@ function getSelectionText(
 ) {
   let words = undefined;
   if (selection) {
-    let { anchor, active } = selection;
-
-    words = vscode.window.activeTextEditor?.document.getText(
-      new vscode.Range(anchor, active)
-    );
+    words = vscode.window.activeTextEditor?.document.getText(selection);
   }
   return words;
 }
