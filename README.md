@@ -4,10 +4,18 @@ For selection words,this extension offers some features.
 
 ## Features
 
-### 1.0.0
+### 0.0.3
 
 support following features:
 
 1. `toUpperCase` ctrl+u
+
+aaa => AAA
+
 2. `toLowerCase` ctrl+l
-3. `camelCaseToUnderline` ctrl+c ctrl+u
+
+AAA => aaa
+
+3. `camelCaseToUnderline` ctrl+shift+u
+
+doMyBest = > DO_MY_BEST
