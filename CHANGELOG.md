@@ -15,3 +15,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [v0.0.4]
 
 - Avoid keeping selection in closure, get selection in function instead.
+
+## [v0.0.5]
+
+- change keyCode to avoid conflict
+
+## [v0.0.7]
+
+- remove "when"

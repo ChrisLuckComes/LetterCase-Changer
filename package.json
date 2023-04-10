@@ -2,7 +2,7 @@
   "name": "letter-case-changer",
   "displayName": "Letter Case Changer",
   "description": "a vscode extension to change selected words to uppercase or lowercase",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "publisher": "ChrisLuo",
   "engines": {
     "vscode": "^1.77.0"
@@ -34,18 +34,15 @@
     "keybindings": [
       {
         "command": "letter-case-changer.toUpperCase",
-        "key": "ctrl+u",
-        "when": "editorHasSelection"
+        "key": "ctrl+t ctrl+u"
       },
       {
         "command": "letter-case-changer.toLowerCase",
-        "key": "ctrl+l",
-        "when": "editorHasSelection"
+        "key": "ctrl+t ctrl+l"
       },
       {
         "command": "letter-case-changer.camelCaseToUnderLine",
-        "key": "ctrl+shift+u",
-        "when": "editorHasSelection"
+        "key": "ctrl+alt+u"
       }
     ]
   },

@@ -8,14 +8,18 @@ For selection words,this extension offers some features.
 
 support following features:
 
-1. `toUpperCase` ctrl+u
+1. `toUpperCase` ctrl+t ctcl+u
 
 aaa => AAA
 
-2. `toLowerCase` ctrl+l
+2. `toLowerCase` ctrl+t ctrl+l
 
 AAA => aaa
 
-3. `camelCaseToUnderline` ctrl+shift+u
+3. `camelCaseToUnderline` ctrl+alt+u
 
 doMyBest = > DO_MY_BEST
+
+### 0.0.7
+
+remove attribute in package.json "when"
